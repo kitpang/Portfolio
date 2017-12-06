@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <!--Please make sure that you have Bootstrap CSS link, here I am using the CDN just to make the example work.  You will have the normal <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  OK -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!--I am embeding the CSS style in the header just for you to see it, but please cut it and add it to your external CSS file OK.-->
+        <style type="text/css">
+        
+        /*Modal pop-up styles*/
+            
+        /*The selector below is one the most important because it controls the width of the modal.*/
+
+        .modal-dialog {
+            max-width: 960px !important;
+        }
+
+        .modal-popup {
+            padding: 45px 60px;
+            text-align: left;
+            /*background: url('../img/popup.jpg');*/
+            background: #ffffff;
+        }
+
+        .modal-popup a.close-link {
+            font-size: 22px;
+            color: #0A1128;
+        }
+        
+        </style>
+        <link rel="stylesheet" href="myCSS.css">
+    </head>
+    <body>
+        
+        <h1>HOW TO ADD BOOTSTRAP MODAL</h1>
+        <h2>This is a quick example to add Bootstrap model to your template if it hasn't got one!</h2>
+       
+        
+        <p>
+            Make sure the the Bootstrap modal code goes just before your openning footer section, I haven't got one with this webpage, but you got the idea.  Also, I only created one modal, but you will create as many as you want depending on the number of projects you will have or anything else you are thinking to use modals, just give them different id's like id="modal1", id="modal2" and so on.
+        </p>
+        
+        <p>You will notice the modal picture is missing and CSS is 100% perfect with the buttons inside the modal, well, that's your work to change it as you wish.</p>
+        
+        <h4 class="white heading small-pt">Click the button to open the modal</h4>
+        
+        <!--You don't necessary need to use Button tag, you could also use <a></a> but then you need a class to style your button.-->        
+        <button href="#" class="btn btn-white-fill expand" data-toggle="modal" data-target="#modal1">Project details</button>
+        
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="row">
+                <div class="col-md-12"><h3>E-Commerce Website</h3>
+                <hr>    
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6 modalLC"><h4>Project Description</h4>
+                    <p>This project is a E-Commerce website selling CIW Self-Study Kits.  The project is a combination of an online shopping cart based on PayPal and responsive website build with Bootstrap framework.</p>
+                    <h4>Technologies Used</h4>   
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                     <h4>What I learnt</h4>   
+<p>How to use PayPal to integrate a shopping cart to utilise E-Commerce online.
+</p>
+                    
+                    <h4>Future Scope</h4>   
+<p>Would be to create a shopping cart from scratch utilising the power of JavaScript and jQuery.
+</p>
+                    </div>
+                <div class="col-md-5 col-md-offset-1 modalRC"><img src="../Cardio/img/team/team-cover1.jpg" class="modalPImages" alt="First Project - E-Commerce Website">
+                    <div class="row">
+                    <div class="col-md-6">
+                    <div><button class="btn btn-default btn-lg modalButtons" type="button">Live Demo</button></div>
+                    </div>
+                    <div class="col-md-6">
+                    <div><button class="btn btn-default btn-lg modalButtonsC" type="button"  class="btn btn-default" data-dismiss="modal">Close</button></div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12"><button class="btn btn-default btn-lg modalButtonsD" type="button">Code via GitHub</button></div>
+                    </div>
+                    </div>
+                
+                </div>
+			</div>
+		</div>
+	</div>
+        
+     
+    <!--Once again this is the jQuery CDN link, so your Bootstrap will come with it's own jQuerey link file, if not then you can use the CDN link.  Same applies to the Bootstrap CDN link for JavaScript below.-->
+        
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+        
+    </body>
+</html>
+
